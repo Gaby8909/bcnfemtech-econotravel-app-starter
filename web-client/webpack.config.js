@@ -9,10 +9,10 @@ module.exports = {
         port: 3000,
         historyApiFallback: true
     },
-<<<<<<< HEAD
 
-=======
->>>>>>> 59618a9f9e3971957c690ec5ba36c52c9f5f98b9
+
+
+
     entry: [
         path.join(__dirname, 'src/js/main.js')
     ],
