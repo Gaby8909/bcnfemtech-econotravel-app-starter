@@ -4,10 +4,9 @@
 import '../scss/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-import {ExperiencePanel} from './components/ExperiencePanel'
+import {App} from "./components/app";
 
 ReactDOM.render(
-    React.createElement(ExperiencePanel),
+    React.createElement(App),
     document.getElementById("app")
 )
