@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
+const CopyWebPackPlugin = require('copy-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
@@ -9,10 +10,6 @@ module.exports = {
         port: 3000,
         historyApiFallback: true
     },
-
-
-
-
     entry: [
         path.join(__dirname, 'src/js/main.js')
     ],
@@ -26,6 +23,14 @@ module.exports = {
     },
     module: {
         rules: [
+              {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
@@ -60,7 +65,12 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: isDevelopment ? '[name].css' : '[name].[fullhash].css',
             chunkFilename: isDevelopment ? '[id].css' : '[id].[fullhash].css'
-        })
+        }),
+        new CopyWebPackPlugin({
+            patterns: [
+                {from: 'src/js/components/assets'}
+            ]
+        }),
     ]
 
 }
