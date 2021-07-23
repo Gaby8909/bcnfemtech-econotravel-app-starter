@@ -6,40 +6,24 @@ export const ExperienceCarousel = () => (
 
     <Carousel autoPlay>
         <div>
-            <img src={"web-client/src/js/components/assets/tour-bici-montseny.jpg"} alt="" />
-            <p className="legend">Legend 1</p>
+            <img src={".assets/tour-bici-montseny.jpg"} alt="" />
+            <p className="legend"> Paseo en bicicleta por el Montseny</p>
         </div>
         <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 2</p>
+            <img alt="" src="./assets/barco.jpg" />
+            <p className="legend">Descubre la costa en barco de vela</p>
         </div>
         <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 3</p>
+            <img alt="" src="./assets/casa-batllo.jpg" />
+            <p className="legend">Descubre la Barcelona Modernista de noche</p>
         </div>
         <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 4</p>
+            <img alt="" src="./assets/huerto.jpg" />
+            <p className="legend">Del huerto a la mesa</p>
         </div>
         <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 5</p>
-        </div>
-        <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 6</p>
-        </div>
-        <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 7</p>
-        </div>
-        <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 8</p>
-        </div>
-        <div>
-            <img alt="" src="" />
-            <p className="legend">Legend 9</p>
+            <img alt="" src="./assets/montserrat.jpg" />
+            <p className="legend">Arte en la montaña sagrada</p>
         </div>
 
 

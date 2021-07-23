@@ -20,7 +20,7 @@ return <Router>
      <Route path="/reservas">
              <Reservas />
      </Route>
-        <Route path="/carousel">
+        <Route path="/experienceCarousel">
             <ExperienceCarousel />
         </Route>
 
