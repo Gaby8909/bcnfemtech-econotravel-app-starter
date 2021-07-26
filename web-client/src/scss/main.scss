@@ -13,4 +13,15 @@ body {
     padding: 10px;
     color:white;
   }
+  }
+.carouselContainer {
+  height: 679px;
+  width: 100vw;
+
+  img {
+    height: 679px;
+    width: auto;
+    object-fit: cover;
+
+  }
 }
