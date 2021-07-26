@@ -25,6 +25,7 @@ return <Router>
         </Route>
 
     </Switch>
+    <ExperienceCarousel />
     </Router>
 
 }

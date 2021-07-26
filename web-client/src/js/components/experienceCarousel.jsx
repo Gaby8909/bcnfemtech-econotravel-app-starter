@@ -1,40 +1,73 @@
 import * as React from "react";
-import {Carousel} from "react-responsive-carousel"
-import image from '"./assets/tour-bici-montseny.jpg"'
+import Carousel from "react-bootstrap/Carousel"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Montseny from "./assets/tour-bici-montseny.jpg";
+import Barco from "./assets/barco.jpg";
+import CasaBatlo from "./assets/casa-batllo.jpg";
+import Huerto from "./assets/huerto.jpg";
+import Montserrat from "./assets/montserrat.jpg"
 
-export const ExperienceCarousel = (props) => (
+export const ExperienceCarousel = () => (
+          <Carousel>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src= {Montseny}
+                    alt="Slide Montseny"
+                />
+                <Carousel.Caption>
+                    <h3>Montseny en bici</h3>
+                    <p>Paseo en bicicleta por el Montseny</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src= {Barco}
+                    alt="Slide barco"
+                />
 
-    const experiences = props.experiences;
+                <Carousel.Caption>
+                    <h3>Paseo en barco</h3>
+                    <p>Descubre la costa en barco de vela</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src={CasaBatlo}
+                    alt="Slide casa batlo"
+                />
 
-    // <Carousel autoPlay>
-    //     { experiences.map (e => <div>
-    //         <img src={e.image}/>
-    //         <p className={"legend"}>{e.name}</p>
-    //     </div>)}
-    // </Carousel>
-    <Carousel autoPlay>
-        <div>
-            <img src={image} alt="" />
-            <p className="legend"> Paseo en bicicleta por el Montseny</p>
-        </div>
-        <div>
-            <img alt="" src="./assets/barco.jpg" />
-            <p className="legend">Descubre la costa en barco de vela</p>
-        </div>
-        <div>
-            <img alt="" src="./assets/casa-batllo.jpg" />
-            <p className="legend">Descubre la Barcelona Modernista de noche</p>
-        </div>
-        <div>
-            <img alt="" src="./assets/huerto.jpg" />
-            <p className="legend">Del huerto a la mesa</p>
-        </div>
-        <div>
-            <img alt="" src="./assets/montserrat.jpg" />
-            <p className="legend">Arte en la montaña sagrada</p>
-        </div>
+                <Carousel.Caption>
+                    <h3>Casa Batlò</h3>
+                    <p>
+                        Descubre la Barcelona Modernista de noche
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src= {Huerto}
+                    alt="Slide huerto"
+                />
+                <Carousel.Caption>
+                    <h3>Huerto en Barcelona</h3>
+                    <p>Del huerto a la mesa</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src= {Montserrat}
+                    alt="Slide Montserrat"
+                />
+                <Carousel.Caption>
+                    <h3>Montserrat</h3>
+                    <p>Arte en la montaña sagrada</p>
+                </Carousel.Caption>
+            </Carousel.Item>
+            </Carousel>
 
-
-
-    </Carousel>
-);
+)
