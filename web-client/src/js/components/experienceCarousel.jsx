@@ -1,14 +1,15 @@
 import * as React from "react";
 import Carousel from "react-bootstrap/Carousel"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Montseny from "./assets/tour-bici-montseny.jpg";
-import Barco from "./assets/barco.jpg";
-import CasaBatlo from "./assets/casa-batllo.jpg";
-import Huerto from "./assets/huerto.jpg";
-import Montserrat from "./assets/montserrat.jpg"
+import Montseny from "./assets/ciclismo.jpg";
+import Barco from "./assets/paseobarco.jpg";
+import CasaBatlo from "./assets/palau.jpg";
+import Huerto from "./assets/huertofamilia.jpg";
+import Montserrat from "./assets/sagrada.jpg"
 
 export const ExperienceCarousel = () => (
-          <Carousel>
+    <div className="carouselContainer" >
+       <Carousel>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
@@ -69,5 +70,5 @@ export const ExperienceCarousel = () => (
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel>
-
+    </div>
 )
