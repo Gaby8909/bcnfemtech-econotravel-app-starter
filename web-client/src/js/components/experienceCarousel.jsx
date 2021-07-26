@@ -1,12 +1,20 @@
 import * as React from "react";
 import {Carousel} from "react-responsive-carousel"
+import image from '"./assets/tour-bici-montseny.jpg"'
 
+export const ExperienceCarousel = (props) => (
 
-export const ExperienceCarousel = () => (
+    const experiences = props.experiences;
 
+    // <Carousel autoPlay>
+    //     { experiences.map (e => <div>
+    //         <img src={e.image}/>
+    //         <p className={"legend"}>{e.name}</p>
+    //     </div>)}
+    // </Carousel>
     <Carousel autoPlay>
         <div>
-            <img src={".assets/tour-bici-montseny.jpg"} alt="" />
+            <img src={image} alt="" />
             <p className="legend"> Paseo en bicicleta por el Montseny</p>
         </div>
         <div>
@@ -25,6 +33,7 @@ export const ExperienceCarousel = () => (
             <img alt="" src="./assets/montserrat.jpg" />
             <p className="legend">Arte en la montaña sagrada</p>
         </div>
+
 
 
     </Carousel>
