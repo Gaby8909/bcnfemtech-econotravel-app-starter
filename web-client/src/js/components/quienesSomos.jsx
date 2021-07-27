@@ -12,20 +12,26 @@ export const QuienesSomos = () => {
 
                 Preocupada por la falta de alternativas eco-friendly, Marina se propuso fundar una agencia de experiencias turísticas donde el respeto por la naturaleza fuera la principal prioridad. Así nació Econotravel Barcelona.
             </p>
+        </div>
+            <div className={"infoContainer"}>
 
-            <div className={"infoImage"}>
-                <img className={"infoMarina"} src={Marina} alt="imgFounder" />
-                <p><h5>Marina Herrán, fundadora de Econotravel</h5></p>
+            <div className={"infoContainer__div"}>
+                <div>
+                <img className={"infoContainer__img"} src={Marina} alt="imgFounder" />
+                </div>
+                <h5>Marina Herrán, fundadora de Econotravel</h5>
+
             </div>
 
-            <div className={"infoContacto"}>
+            <div className={"infoContact"}>
                 <h4>Contacto</h4>
                 <p><h6>Teléfono:</h6> 93 000 00 00</p>
                 <p><h6>Correo:</h6> info@econotravel.com</p>
                 <p><h6>Dirección:</h6> Carrer dels Viatgers, 28, 08000 Barcelona</p>
             </div>
+            </div>
 
-        </div>
+
         </section>
 
     )

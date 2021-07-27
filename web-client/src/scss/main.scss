@@ -1,22 +1,26 @@
 body {
   margin: 0;
 }
+
 .navigationBar {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  height:50px;
+  height: 50px;
   background-color: #76D5A7;
   box-shadow: inset 0px -5px 14px 1px #838f7f;
+
   .itemsLinks {
     margin-right: 5vw;
   }
+
   a {
     text-decoration: none;
     padding: 10px;
-    color:white;
+    color: white;
+
     &:hover {
-      color: #E9F7F7  ;
+      color: #E9F7F7;
     }
   }
 
@@ -25,6 +29,7 @@ body {
     justify-content: center;
     height: 65px;
     margin-left: 2vw;
+
     img {
       height: 100%;
       width: auto;
@@ -32,7 +37,8 @@ body {
   }
 
 
-  }
+}
+
 .carouselContainer {
   height: 679px;
   width: 100vw;
@@ -44,8 +50,34 @@ body {
 
   }
 }
+
 .infoMarina {
-  height: 600px;
+  height: 500px;
   width: auto;
+  margin-left: 20px;
+
+
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  &__img {
+    border-radius: 25%;
+
+
+  }
+  &__div{
+    height: 20%;
+
+  }
+
+}
+
+.infoContact {
+  margin: 30px;
 
 }
