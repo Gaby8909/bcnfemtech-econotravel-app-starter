@@ -7,7 +7,7 @@ body {
   justify-content: space-between;
   height:50px;
   background-color: #76D5A7;
-  color: white;
+  box-shadow: inset 0px -5px 14px 1px #838f7f;
   .itemsLinks {
     margin-right: 5vw;
   }
@@ -16,7 +16,7 @@ body {
     padding: 10px;
     color:white;
     &:hover {
-      color: #E9F7F7;
+      color: #E9F7F7  ;
     }
   }
 
