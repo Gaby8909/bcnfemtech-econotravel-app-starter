@@ -69,7 +69,7 @@ module.exports = {
         }),
         new CopyWebPackPlugin({
             patterns: [
-                {from: 'src/js/images'}
+                {from: 'src/js/components/assets'}
             ]
         }),
     ]
