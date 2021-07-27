@@ -1,6 +1,7 @@
 import * as React from "react";
 
 export const Reservas = () => {
-    return
-    <div> Hola </div>
+    return (
+    <div> Reservas Econotravel </div>
+    )
 }

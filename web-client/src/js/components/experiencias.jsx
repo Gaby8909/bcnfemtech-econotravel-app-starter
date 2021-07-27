@@ -1,6 +1,7 @@
 import * as React from "react";
 
 export const Experiencias = () => {
-    return
-    <div> Hola</div>
+    return (
+    <div> Teste experiencias</div>
+    )
 }

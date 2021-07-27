@@ -20,12 +20,12 @@ return <Router>
      <Route path="/reservas">
              <Reservas />
      </Route>
-        <Route path="/experienceCarousel">
+        <Route path="/app">
             <ExperienceCarousel />
         </Route>
 
     </Switch>
-    <ExperienceCarousel />
+
     </Router>
 
 }
