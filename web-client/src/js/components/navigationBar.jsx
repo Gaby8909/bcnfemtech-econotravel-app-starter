@@ -5,7 +5,7 @@ import logo from "./assets/logo-transparente.png";
 export const NavigationBar = () => (
     <nav className={"navigationBar"}>
         <div className={"logoImg"}>
-            <a><Link to={"/app"}> <img src={logo} alt={""} /> </Link></a>
+            <Link to={"/app"}><img src={logo} alt={""} /></Link>
         </div>
         <div className={"itemsLinks"}>
         <Link to={"/quienesSomos"}>Quienes Somos </Link>

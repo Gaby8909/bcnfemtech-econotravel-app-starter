@@ -23,6 +23,10 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\,(png|jpg|svg)$/,
+                use:['url-loader'],
+            },
               {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
