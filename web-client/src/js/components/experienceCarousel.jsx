@@ -1,7 +1,7 @@
 import * as React from "react";
 import Carousel from "react-bootstrap/Carousel"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Montseny from "./assets/apertura_montseny.jpg";
+import Montseny from "./assets/ciclismo.jpg";
 import Barco from "./assets/sail-boat.jpg";
 import CasaBatlo from "./assets/palau.jpg";
 import Huerto from "./assets/huertofamilia.jpg";
