@@ -22,7 +22,7 @@ return <Router>
      </Route>
         <Route exact path="/">
             <ExperienceCarousel />
-            <app />
+
         </Route>
 
     </Switch>
