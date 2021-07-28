@@ -6,6 +6,8 @@ import {Experiencias} from "./experiencias";
 import {Reservas} from "./reservas";
 import {ExperienceCarousel} from "./experienceCarousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import {Card} from "./Card";
+import {Cardsinfo} from "./Cardsinfo"
 
 export const App = () => {
 return <Router>
@@ -22,9 +24,17 @@ return <Router>
      </Route>
         <Route exact path="/">
             <ExperienceCarousel />
-
         </Route>
-
+        {/*<Route exact path="/">*/}
+        {/*    <Card />*/}
+        {/*</Route>*/}
+        {/*<Route exact path="/">*/}
+        {/*    <Cardsinfo />*/}
+        {/*</Route>*/}
+        <div className={"cards"}>
+            <Card />
+            <Cardsinfo />
+        </div>
     </Switch>
 
     </Router>

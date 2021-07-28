@@ -81,3 +81,49 @@ body {
   margin: 30px;
 
 }
+.wrapper{
+  display:flex;
+  justify-content: center;
+  margin: 5vh;
+
+}
+.card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px #838f7f;
+  border-radius:8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor:pointer;
+  transition: ease-in 200ms;
+&__image{
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+  }
+  &__title{
+    padding:1rem;
+  }
+  &__description{
+    padding:0 1rem;
+  }
+  &__btn{
+    padding:1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border:2px solid darkgrey;
+    background: transparent;
+    color: aqua;
+    border-radius: 5px;
+    transition: background 200ms ease-in,color 200ms ease-in;
+    &:hover{
+      transform: scale(1.02);
+    }
+    &:hover &__btn{
+      background: #E9F7F7;
+      color: white;
+    }
+  }
+}
