@@ -1,53 +1,57 @@
 import * as React from "react";
+import { useForm } from "react-cool-form";
 
-export const Reservas  = () =>
-    <section>
 
-    <div className="infoForm">
-        <form id="contact" action="" method="post">
-            <h3>Formulario de reserva</h3>
-            <h4>Haz tu reserva aquí</h4>
-            <fieldset>
-                <input placeholder="Nombre" type="text" tabIndex="1" required autoFocus />
-            </fieldset>
-            <fieldset>
-                <input placeholder="Dirección e-mail" type="email" tabIndex="2" required />
-            </fieldset>
-            <fieldset>
-                <input placeholder="Teléfono de contacto" type="tel" tabIndex="3" required />
-            </fieldset>
-            <fieldset>
-                <select class="desplegable" type="text" tabIndex="4" required id="experiencia" name="experiencia">
-                    <option value={"experiencia"}> Elige tu experiencia </option>
-                    <option value="1"> Montseny en bici -- 150€ --  </option>
-                    <option value="1"> Paseo en barco -- 180€ -- </option>
-                    <option value="1"> Barcelona modernista -- 100€ -- </option>
-                    <option value="1"> Huerto en Barcelona -- 50€ -- </option>
-                    <option value="1"> Visita a Montserrat -- 145€ -- </option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <select class="desplegable" type="text" tabIndex="4" required id="experiencia" name="experiencia">
-                    <option select value={"experiencia"}> Número de personas </option>
-                    <option value="1"> 1 </option>
-                    <option value="1"> 2 </option>
-                    <option value="1"> 3 </option>
-                    <option value="1"> 4 </option>
-                    <option value="1"> 5 </option>
-                    <option value="1"> 6 </option>
-                </select>
-            </fieldset>
+export const Reservas  = ({ label, id, error, ...rest }) => (
+        <div>
+            <label htmlFor={id}>{label}</label>
+            <input id={id} {...rest} />
+            {error && <p>{error}</p>}
+        </div>
+        );
 
-            <fieldset>
-                <textarea placeholder="Escribe tu mensaje aquí...." tabIndex="5" required></textarea>
-            </fieldset>
+        const App = () => {
+        const { form, use } = useForm({
+        // (Strongly advise) Provide the default values
+        defaultValues: { username: "", email: "", password: "" },
+        // The event only triggered when the form is valid
+        onSubmit: (values) => console.log("onSubmit: ", values),
+    });
+        // We can enable the "errorWithTouched" option to filter the error of an un-blurred field
+        // Which helps the user focus on typing without being annoyed by the error message
+        const errors = use("errors", { errorWithTouched: true }); // Default is "false"
 
-            <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
-
+        return (
+        <form ref={form} noValidate>
+        <Field
+        label="Username"
+        id="username"
+        name="username"
+        // Support built-in validation
+        required
+        error={errors.username}
+        />
+        <Field
+        label="Email"
+        id="email"
+        name="email"
+        type="email"
+        required
+        error={errors.email}
+        />
+        <Field
+        label="Password"
+        id="password"
+        name="password"
+        type="password"
+        required
+        minLength={8}
+        error={errors.password}
+        />
+        <input type="submit" />
         </form>
-    </div>
+
+        )
+    }
 
 
-</section>

@@ -7,7 +7,8 @@ import {Reservas} from "./reservas";
 import {ExperienceCarousel} from "./experienceCarousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Card} from "./Card";
-import {Cardsinfo} from "./Cardsinfo"
+import {Cardsinfo} from "./Cardsinfo";
+import 'react-cool-form';
 
 export const App = () => {
 return <Router>
