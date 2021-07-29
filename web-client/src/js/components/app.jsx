@@ -7,6 +7,7 @@ import {Reservas} from "./reservas";
 import {ExperienceCarousel} from "./experienceCarousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-cool-form';
+import {ReservasCompleted} from "./reservasCompleted";
 
 export const App = () => {
 return <Router>
@@ -24,6 +25,10 @@ return <Router>
         <Route exact path="/">
             <ExperienceCarousel />
         </Route>
+
+    <Route path="/reservasCompleted">
+        <ReservasCompleted />
+    </Route>
 
     </Switch>
 

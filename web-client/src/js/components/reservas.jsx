@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useForm } from "react-cool-form";
 import {Link} from "react-router-dom";
-import {ReservasCompleted} from "./reservasCompleted";
+
 
 export const Reservas = () => {
 
@@ -54,13 +54,12 @@ export const Reservas = () => {
                     <textarea placeholder="Escribe aquí tu mensaje...." tabIndex="5" required></textarea>
                 </fieldset>
                 <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  <Link to={"/reservasCompleted"}>  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button> </Link>
+
                 </fieldset>
 
             </form>
-                <div>
-                    <Link to={"/reservasCompleted"}> <Button className="btn btn-success"> Reserve agora! </Button> </Link>
-                </div>
+
             </section>
         )
     }
