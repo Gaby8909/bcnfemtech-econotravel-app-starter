@@ -3,7 +3,7 @@ import { useForm } from "react-cool-form";
 import {Link} from "react-router-dom";
 
 
-export const Reservas = () => {
+    export const Reservas = () => {
 
             const {form, getState} = useForm({
             defaultValues: {name: "", email: "", phone: ""},
@@ -13,6 +13,10 @@ export const Reservas = () => {
 
         return (
             <section className="bodyForm">
+
+              <div className="reservaForm">
+                  <h1>Haz aquí tu reserva</h1>
+              </div>
             <form ref={form} noValidate>
                 <div className="divForm">
                     {/* Support built-in validation */}
@@ -28,7 +32,7 @@ export const Reservas = () => {
                     {errors.phone && <p>{errors.phone}</p>}
                 </div>
                 <fieldset>
-                    <select className="desplegable" type="text" tabIndex="4" required id="experiencia"
+                    <select className="formDesplegable" type="text" tabIndex="4" required id="experiencia"
                             name="experiencia">
                         <option value={"experiencia"}> Elige tu experiencia</option>
                         <option value="1"> Montseny en bici -- 150€ --</option>
@@ -39,7 +43,7 @@ export const Reservas = () => {
                     </select>
                 </fieldset>
                 <fieldset>
-                    <select className="desplegable" type="text" tabIndex="4" required id="experiencia"
+                    <select className="formDesplegable" type="text" tabIndex="4" required id="experiencia"
                             name="experiencia">
                         <option select value={"experiencia"}> Número de personas</option>
                         <option value="1"> 1</option>
@@ -51,10 +55,10 @@ export const Reservas = () => {
                     </select>
                 </fieldset>
                 <fieldset>
-                    <textarea placeholder="Escribe aquí tu mensaje...." tabIndex="5" required></textarea>
+                    <textarea className="formTarea" placeholder="Escribe aquí tu mensaje...." tabIndex="5" required></textarea>
                 </fieldset>
                 <fieldset>
-                  <Link to={"/reservasCompleted"}>  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button> </Link>
+                  <Link to={"/reservasCompleted"}>  <button className="formButton" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button> </Link>
 
                 </fieldset>
 

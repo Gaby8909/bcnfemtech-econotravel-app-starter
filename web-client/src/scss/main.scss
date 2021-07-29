@@ -4,14 +4,44 @@ body {
 .bodyForm {
   font-family: sans-serif;
   background: white;
+
 }
 form {
   margin: 5rem auto 0;
   width: 24rem;
 }
+.formDesplegable {
+  width: inherit;
+  margin-bottom: 1rem;
+  height: 2rem;
+  border-color: #76D5A7;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.formButton {
+  background-color: #76D5A7;
+
+
+}
+
 .divForm {
   width: inherit;
   margin-bottom: 1rem;
+}
+.reservaForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.formTarea {
+  width: inherit;
+  margin-bottom: 2rem;
+  border-color: #76D5A7;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+
+
 }
 label {
   display: block;
@@ -27,13 +57,7 @@ input {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
-  height: 2.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background: #0971f1;
-  cursor: pointer;
-}
+
 
 p {
   margin: 0;
