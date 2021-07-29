@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Marina from "./assets/marina.jpg"
 
 export const QuienesSomos = () => {
