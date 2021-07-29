@@ -6,26 +6,37 @@ import {Experiencias} from "./experiencias";
 import {Reservas} from "./reservas";
 import {ExperienceCarousel} from "./experienceCarousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
+import {Card} from "./Card";
+import {Cardsinfo} from "./Cardsinfo";
+import 'react-cool-form';
 
 export const App = () => {
-    return <Router>
-        <NavigationBar/>
-        <Switch>
-            <Route exact path="/">
-                <ExperienceCarousel/>
-            </Route>
-            <Route path="/quienesSomos">
-                <QuienesSomos/>
-            </Route>
-            <Route path="/experiencias">
-                <Experiencias/>
-            </Route>
-            <Route path="/reservas">
-                <Reservas/>
-            </Route>
-
-        </Switch>
+return <Router>
+    <NavigationBar />
+    <Switch>
+     <Route path="/quienesSomos">
+         <QuienesSomos />
+     </Route>
+     <Route path="/experiencias">
+         <Experiencias />
+     </Route>
+     <Route path="/reservas">
+             <Reservas />
+     </Route>
+        <Route exact path="/">
+            <ExperienceCarousel />
+        </Route>
+        {/*<Route exact path="/">*/}
+        {/*    <Card />*/}
+        {/*</Route>*/}
+        {/*<Route exact path="/">*/}
+        {/*    <Cardsinfo />*/}
+        {/*</Route>*/}
+        <div className={"cards"}>
+            <Card />
+            <Cardsinfo />
+        </div>
+    </Switch>
 
     </Router>
 
