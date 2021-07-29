@@ -1,6 +1,6 @@
 import * as React from "react";
 import {Link} from "react-router-dom";
-import {Reservas} from "./reservas"
+
 
 export const ReservasCompleted = () => {
     return (
