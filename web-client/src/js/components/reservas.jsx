@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useForm } from "react-cool-form";
+import {Link} from "react-router-dom";
+import {ReservasCompleted} from "./reservasCompleted";
 
 export const Reservas = () => {
 
@@ -56,6 +58,9 @@ export const Reservas = () => {
                 </fieldset>
 
             </form>
+                <div>
+                    <Link to={"/reservasCompleted"}> <Button className="btn btn-success"> Reserve agora! </Button> </Link>
+                </div>
             </section>
         )
     }

@@ -9,6 +9,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import {Card} from "./Card";
 import {Cardsinfo} from "./Cardsinfo";
 import 'react-cool-form';
+import {ReservasCompleted} from "./reservasCompleted";
+
 
 export const App = () => {
 return <Router>
@@ -36,6 +38,9 @@ return <Router>
             <Card />
             <Cardsinfo />
         </div>
+        <Route path="/reservasCompleted">
+            <ReservasCompleted />
+        </Route>
     </Switch>
 
     </Router>
