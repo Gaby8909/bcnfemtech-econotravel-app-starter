@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useForm } from "react-cool-form";
+import {useForm } from "react-cool-form";
 
 export const Reservas = () => {
 
