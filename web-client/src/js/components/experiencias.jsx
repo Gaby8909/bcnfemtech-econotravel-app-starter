@@ -66,6 +66,7 @@ const cardsList = [
 export function Experiencias() {
     return (
         <div className="cardContainer">
+            <h1>Descubre nuestras experiencias</h1>
             {
                 cardsList.map(card => (
                     <div className="experiencia" key={card.id}>

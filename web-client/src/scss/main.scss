@@ -110,7 +110,7 @@ p {
 
 .carouselContainer {
   height: 679px;
-  width: 100vw;
+  width: 100%;
 
   img {
     height: 679px;
@@ -170,6 +170,9 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  h1{
+    padding: 20px;
+  }
 }
 
 .wrapper {
