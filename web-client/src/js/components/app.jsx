@@ -8,6 +8,7 @@ import {ExperienceCarousel} from "./experienceCarousel"
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'react-cool-form';
 import {ReservasCompleted} from "./reservasCompleted";
+import {Footer} from "./footer"
 
 export const App = () => {
 return <Router>
@@ -31,6 +32,7 @@ return <Router>
     </Route>
 
     </Switch>
+    <Footer />
 
     </Router>
 

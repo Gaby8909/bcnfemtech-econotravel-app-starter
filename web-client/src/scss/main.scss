@@ -8,6 +8,7 @@ body {
 .bodyForm {
   font-family: sans-serif;
   background: white;
+  margin-bottom: 3rem;
 
 }
 
@@ -26,7 +27,6 @@ form {
 .formButton {
   background-color: #76D5A7;
 
-
 }
 
 .divForm {
@@ -37,6 +37,7 @@ form {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+
 }
 .formTarea {
   width: inherit;
@@ -44,9 +45,6 @@ form {
   border-color: #76D5A7;
   border-radius: 4px;
   box-sizing: border-box;
-
-
-
 }
 
 label {
@@ -69,6 +67,9 @@ input {
 p {
   margin: 0;
   //color: #ff9900;
+}
+.completedFormMsg {
+  margin-bottom: 73vh;
 }
 
 .navigationBar {
@@ -155,7 +156,6 @@ p {
   padding: 0 50px 0 50px;
   margin-top: 50px;
 
-
 }
 
 .infoText {
@@ -231,6 +231,20 @@ p {
       }
     }
 
+}
+div.footer{
+  background-color: #76D5A7;
+
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  bottom:0;
+  width: 100%;
+}
+ p {
+  margin: auto;
 }
 
 
