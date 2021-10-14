@@ -57,3 +57,14 @@ de H2 disponible en `/h2-ui`
 ![panel de h2](doc/images/h2-ui.png)
 
 
+the default branch has been renamed!
+libritos is now named main
+
+If you have a local clone, you can update it by running the following commands.
+
+git branch -m libritos main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
+
